@@ -1,0 +1,6 @@
+framework module Pods_FormManager_Tests {
+  umbrella header "Pods-FormManager_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

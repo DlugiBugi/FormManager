@@ -1,0 +1,14 @@
+PODS:
+  - FormManager (0.1.0)
+
+DEPENDENCIES:
+  - FormManager (from `../`)
+
+EXTERNAL SOURCES:
+  FormManager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FormManager: 23a7cde124c6b46bed2ebcf2c520c58276a4c1bd
+
+COCOAPODS: 0.39.0

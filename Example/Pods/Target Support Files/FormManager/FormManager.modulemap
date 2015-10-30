@@ -1,0 +1,6 @@
+framework module FormManager {
+  umbrella header "FormManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

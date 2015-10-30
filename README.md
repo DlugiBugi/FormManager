@@ -22,7 +22,7 @@ pod "FormManager"
 
 ## Author
 
-Jakub Długosz, jakub.dlugosz@smtsoftware.com
+Jakub Długosz dlugosz.jakub@gmail.com
 
 ## License
 

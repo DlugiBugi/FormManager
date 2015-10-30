@@ -7,11 +7,23 @@
 //
 
 import UIKit
-
+import FormManager
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    var formManager: FormManager!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        formManager = FormManager(tableView: tableView)
+        
+        formManager.addData(NSString(string: "row1"), cellType: CustomCell.self)
+        formManager.addData(NSString(string: "row2"), cellType: CustomCell.self)
+        formManager.addData(NSString(string: "row3"), cellType: CustomCell.self)
+        formManager.addData(NSString(string: "row4"), cellType: CustomCell.self)
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

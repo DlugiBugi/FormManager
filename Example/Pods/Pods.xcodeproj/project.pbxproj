@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FF0B3B07A811E9937983B45E10EDFB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		3A122B906E94C1C715AB274FEA84E56B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		4DF01B251C673C378B5F5A497790EC48 /* Pods-FormManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 190B9933E43178C934E4D419DD7A36B3 /* Pods-FormManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82DAAF6C7D19DC68A45A0DB0E97A4829 /* FormManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CEDCDCBC069A68E219A253BF4F5530 /* FormManager-dummy.m */; };
+		9CBB46058A63FC9AD1E00E6EC55318A9 /* Pods-FormManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6AB10B2BC70AF76C7D426186072F626 /* Pods-FormManager_Example-dummy.m */; };
+		ACB87073A3610E8BB02856979BBBB37B /* FormManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7741118282D5B8DD60A59D2BFD4977 /* FormManager.swift */; };
+		BEACF1B0711E35DC376947E2A97C1F75 /* Pods-FormManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C33B2EDF40B21A34E07691B6C283C55 /* Pods-FormManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D33D0CC60950946814CE7AE231F0D8A1 /* FormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388300638DDE6CA0147B43DC21A6638 /* FormCell.swift */; };
+		D5DF7CF519D56DEA5DC7EFDA75C8802E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		D9002E293C808E9845D051308AFFD735 /* FormManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D87E589D773469219247812EA9399287 /* FormManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6F258E18CF49B987D14263F3CEF6D0D /* FormManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E10FC3A99E2B6F05D0D6DCEDE94DB08F /* FormManager.bundle */; };
+		ED5F4A868A65437116B4889920770967 /* Pods-FormManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BC23C571E1AC3077BE609D290531B8 /* Pods-FormManager_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4C859EE8F45D016D34A2DB36C8D7F41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F302C06715203207DF693B28B1C999D1;
+			remoteInfo = FormManager;
+		};
+		D9B276B0972DE0124AE7E724552524D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F302C06715203207DF693B28B1C999D1;
+			remoteInfo = FormManager;
+		};
+		E923D712B81224F19DA38C6498ED4AE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D6E44BB94F47F60C4CB2F815B28C9AF;
+			remoteInfo = "FormManager-FormManager";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0585B404B46283D882F6E4A7312E138B /* Pods-FormManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FormManager_Tests.modulemap"; sourceTree = "<group>"; };
+		0F5CE69D9807AFA901CDA7BF90240EC9 /* Pods-FormManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FormManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		17049C7B08C3ED36339C929C64E25FF6 /* Pods-FormManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FormManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		190B9933E43178C934E4D419DD7A36B3 /* Pods-FormManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FormManager_Tests-umbrella.h"; sourceTree = "<group>"; };
+		2631AAF6BCDF7613A68EF40E6ADC87FA /* Pods-FormManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FormManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2CA551461FDD2EC1981289E3378C0935 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34893FF3704329AF3B77F1D7D59DC6BF /* FormManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FormManager.modulemap; sourceTree = "<group>"; };
+		352820B4FC1A99684E498E7994EB9D96 /* Pods-FormManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FormManager_Example.modulemap"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		41352029DEE82638457DEB7A249D2C6A /* FormManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FormManager-prefix.pch"; sourceTree = "<group>"; };
+		4327694FED06C898B89B1725B959842A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FB6F56DE9D40DEC3B135C06175E3C57 /* FormManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FormManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F60F9A8808A1AC2460E99F75F64066 /* Pods-FormManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FormManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6849134E1F8EB58F63236D5FD79656BD /* Pods-FormManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FormManager_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6C33B2EDF40B21A34E07691B6C283C55 /* Pods-FormManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FormManager_Example-umbrella.h"; sourceTree = "<group>"; };
+		704F5A65F9BB3AAA0A3748F0ED5C5F64 /* Pods-FormManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FormManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		71BC23C571E1AC3077BE609D290531B8 /* Pods-FormManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FormManager_Tests-dummy.m"; sourceTree = "<group>"; };
+		7220FFF2B60AF612A7DB28807DA330F5 /* Pods-FormManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FormManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7A08F8DFD6D3022C02F35390AFF67744 /* Pods-FormManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FormManager_Tests-resources.sh"; sourceTree = "<group>"; };
+		7F1682C9CF30EDC3F0402A1F0E6A160C /* Pods-FormManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FormManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		832D16FA00965417E6510C1374DE64B4 /* FormManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FormManager.xcconfig; sourceTree = "<group>"; };
+		9B7741118282D5B8DD60A59D2BFD4977 /* FormManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FormManager.swift; sourceTree = "<group>"; };
+		9ECC02881DFBD713313CF8E1DBE47C9B /* Pods-FormManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FormManager_Example-frameworks.sh"; sourceTree = "<group>"; };
+		A6AB10B2BC70AF76C7D426186072F626 /* Pods-FormManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FormManager_Example-dummy.m"; sourceTree = "<group>"; };
+		B0CEDCDCBC069A68E219A253BF4F5530 /* FormManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FormManager-dummy.m"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC113DFE50FA41C948544C018900B71D /* Pods_FormManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FormManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0200EFEED83AF8A2FD2BD2E71AA9FE5 /* Pods_FormManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FormManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87E589D773469219247812EA9399287 /* FormManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FormManager-umbrella.h"; sourceTree = "<group>"; };
+		E10FC3A99E2B6F05D0D6DCEDE94DB08F /* FormManager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E65382AAC38A01D9B977B4A793AC6E18 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E898FB4E7EFD3E72026FED5CA1FE0BCF /* Pods-FormManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FormManager_Example-resources.sh"; sourceTree = "<group>"; };
+		F388300638DDE6CA0147B43DC21A6638 /* FormCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FormCell.swift; sourceTree = "<group>"; };
+		FAECE251048DF3E0D2E09B732E99175C /* Pods-FormManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FormManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01580634EB628B0525F834527A179180 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5315A985E6482E62E0135A7AAD3009AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DF7CF519D56DEA5DC7EFDA75C8802E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61FD916002225FAB53DD580DB7BB1309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A122B906E94C1C715AB274FEA84E56B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		895374B291269CB1BA00A731D67192FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF0B3B07A811E9937983B45E10EDFB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EBAF01BA8C5873E89D21307FC780091 /* Pods-FormManager_Example */ = {
+			isa = PBXGroup;
+			children = (
+				2CA551461FDD2EC1981289E3378C0935 /* Info.plist */,
+				352820B4FC1A99684E498E7994EB9D96 /* Pods-FormManager_Example.modulemap */,
+				7F1682C9CF30EDC3F0402A1F0E6A160C /* Pods-FormManager_Example-acknowledgements.markdown */,
+				7220FFF2B60AF612A7DB28807DA330F5 /* Pods-FormManager_Example-acknowledgements.plist */,
+				A6AB10B2BC70AF76C7D426186072F626 /* Pods-FormManager_Example-dummy.m */,
+				9ECC02881DFBD713313CF8E1DBE47C9B /* Pods-FormManager_Example-frameworks.sh */,
+				E898FB4E7EFD3E72026FED5CA1FE0BCF /* Pods-FormManager_Example-resources.sh */,
+				6C33B2EDF40B21A34E07691B6C283C55 /* Pods-FormManager_Example-umbrella.h */,
+				FAECE251048DF3E0D2E09B732E99175C /* Pods-FormManager_Example.debug.xcconfig */,
+				6849134E1F8EB58F63236D5FD79656BD /* Pods-FormManager_Example.release.xcconfig */,
+			);
+			name = "Pods-FormManager_Example";
+			path = "Target Support Files/Pods-FormManager_Example";
+			sourceTree = "<group>";
+		};
+		3D557E143088380D0C0712D91E1E9BC3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				34893FF3704329AF3B77F1D7D59DC6BF /* FormManager.modulemap */,
+				832D16FA00965417E6510C1374DE64B4 /* FormManager.xcconfig */,
+				B0CEDCDCBC069A68E219A253BF4F5530 /* FormManager-dummy.m */,
+				41352029DEE82638457DEB7A249D2C6A /* FormManager-prefix.pch */,
+				D87E589D773469219247812EA9399287 /* FormManager-umbrella.h */,
+				4327694FED06C898B89B1725B959842A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FormManager";
+			sourceTree = "<group>";
+		};
+		3E748F5121939F97B3D824B32D083D63 /* Pods-FormManager_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E65382AAC38A01D9B977B4A793AC6E18 /* Info.plist */,
+				0585B404B46283D882F6E4A7312E138B /* Pods-FormManager_Tests.modulemap */,
+				0F5CE69D9807AFA901CDA7BF90240EC9 /* Pods-FormManager_Tests-acknowledgements.markdown */,
+				53F60F9A8808A1AC2460E99F75F64066 /* Pods-FormManager_Tests-acknowledgements.plist */,
+				71BC23C571E1AC3077BE609D290531B8 /* Pods-FormManager_Tests-dummy.m */,
+				17049C7B08C3ED36339C929C64E25FF6 /* Pods-FormManager_Tests-frameworks.sh */,
+				7A08F8DFD6D3022C02F35390AFF67744 /* Pods-FormManager_Tests-resources.sh */,
+				190B9933E43178C934E4D419DD7A36B3 /* Pods-FormManager_Tests-umbrella.h */,
+				2631AAF6BCDF7613A68EF40E6ADC87FA /* Pods-FormManager_Tests.debug.xcconfig */,
+				704F5A65F9BB3AAA0A3748F0ED5C5F64 /* Pods-FormManager_Tests.release.xcconfig */,
+			);
+			name = "Pods-FormManager_Tests";
+			path = "Target Support Files/Pods-FormManager_Tests";
+			sourceTree = "<group>";
+		};
+		6EF2D3AAFD4836CCF38A04D2DFA9942F /* FormManager */ = {
+			isa = PBXGroup;
+			children = (
+				C9C12F7DB82D841D5B4BA93480D9BEE7 /* Pod */,
+				3D557E143088380D0C0712D91E1E9BC3 /* Support Files */,
+			);
+			name = FormManager;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7336EC28497FB7FA75C7467DB0FEECAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E10FC3A99E2B6F05D0D6DCEDE94DB08F /* FormManager.bundle */,
+				4FB6F56DE9D40DEC3B135C06175E3C57 /* FormManager.framework */,
+				BC113DFE50FA41C948544C018900B71D /* Pods_FormManager_Example.framework */,
+				C0200EFEED83AF8A2FD2BD2E71AA9FE5 /* Pods_FormManager_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				994753C1B6E890CBCB32A1A3B7FFC1A7 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				7336EC28497FB7FA75C7467DB0FEECAE /* Products */,
+				A036D35D6640F86FA42A1AC86BCD1333 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		994753C1B6E890CBCB32A1A3B7FFC1A7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EF2D3AAFD4836CCF38A04D2DFA9942F /* FormManager */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A036D35D6640F86FA42A1AC86BCD1333 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0EBAF01BA8C5873E89D21307FC780091 /* Pods-FormManager_Example */,
+				3E748F5121939F97B3D824B32D083D63 /* Pods-FormManager_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AD73BF5E60FE1364F443B91161F83A0F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F388300638DDE6CA0147B43DC21A6638 /* FormCell.swift */,
+				9B7741118282D5B8DD60A59D2BFD4977 /* FormManager.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C9C12F7DB82D841D5B4BA93480D9BEE7 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				AD73BF5E60FE1364F443B91161F83A0F /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3322A3F53DCCAD2812102A9DA8F518DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEACF1B0711E35DC376947E2A97C1F75 /* Pods-FormManager_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44DE27AD3A06FA3A9BA73B32B18506ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF01B251C673C378B5F5A497790EC48 /* Pods-FormManager_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4785B41002A49C4F4384536A0160E014 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9002E293C808E9845D051308AFFD735 /* FormManager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1A956EA05B79E9AF0EEA1E714469AAB9 /* Pods-FormManager_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29442DC5B5F5A8BF29DF0D13A75808B2 /* Build configuration list for PBXNativeTarget "Pods-FormManager_Example" */;
+			buildPhases = (
+				8D3D3F3403E9700E474C45D92C7E40FD /* Sources */,
+				5315A985E6482E62E0135A7AAD3009AD /* Frameworks */,
+				3322A3F53DCCAD2812102A9DA8F518DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				708457576CD5DCBEF70B0D5F4535D610 /* PBXTargetDependency */,
+			);
+			name = "Pods-FormManager_Example";
+			productName = "Pods-FormManager_Example";
+			productReference = BC113DFE50FA41C948544C018900B71D /* Pods_FormManager_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3D6E44BB94F47F60C4CB2F815B28C9AF /* FormManager-FormManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38B16F28D2362DBD4A9DF6A73DF55B19 /* Build configuration list for PBXNativeTarget "FormManager-FormManager" */;
+			buildPhases = (
+				12E69B3FC64B40C4DD99FE4E8C84DD03 /* Sources */,
+				01580634EB628B0525F834527A179180 /* Frameworks */,
+				EC0ADBB166F638B03585D2A8D9069FFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FormManager-FormManager";
+			productName = "FormManager-FormManager";
+			productReference = E10FC3A99E2B6F05D0D6DCEDE94DB08F /* FormManager.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4CAEA5F969A1F6B5F27F20BA9BFC55B1 /* Pods-FormManager_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D7B73B4ED51354DA6BC4969BB931C40 /* Build configuration list for PBXNativeTarget "Pods-FormManager_Tests" */;
+			buildPhases = (
+				5C8A947E28482D02AC0EA08AB9FA8826 /* Sources */,
+				895374B291269CB1BA00A731D67192FB /* Frameworks */,
+				44DE27AD3A06FA3A9BA73B32B18506ED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE6422B733DA9E63864A58B7896A66A5 /* PBXTargetDependency */,
+			);
+			name = "Pods-FormManager_Tests";
+			productName = "Pods-FormManager_Tests";
+			productReference = C0200EFEED83AF8A2FD2BD2E71AA9FE5 /* Pods_FormManager_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F302C06715203207DF693B28B1C999D1 /* FormManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE3808BDC25AEF82DF135163956BF308 /* Build configuration list for PBXNativeTarget "FormManager" */;
+			buildPhases = (
+				7EFAC17747DFA072AAC17D59A651FE6A /* Sources */,
+				61FD916002225FAB53DD580DB7BB1309 /* Frameworks */,
+				B9B90C8211E67067B64988C9ECE24D53 /* Resources */,
+				4785B41002A49C4F4384536A0160E014 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCC9788494C9AEFD49DEF68582077C91 /* PBXTargetDependency */,
+			);
+			name = FormManager;
+			productName = FormManager;
+			productReference = 4FB6F56DE9D40DEC3B135C06175E3C57 /* FormManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7336EC28497FB7FA75C7467DB0FEECAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F302C06715203207DF693B28B1C999D1 /* FormManager */,
+				3D6E44BB94F47F60C4CB2F815B28C9AF /* FormManager-FormManager */,
+				1A956EA05B79E9AF0EEA1E714469AAB9 /* Pods-FormManager_Example */,
+				4CAEA5F969A1F6B5F27F20BA9BFC55B1 /* Pods-FormManager_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9B90C8211E67067B64988C9ECE24D53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6F258E18CF49B987D14263F3CEF6D0D /* FormManager.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0ADBB166F638B03585D2A8D9069FFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12E69B3FC64B40C4DD99FE4E8C84DD03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C8A947E28482D02AC0EA08AB9FA8826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED5F4A868A65437116B4889920770967 /* Pods-FormManager_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EFAC17747DFA072AAC17D59A651FE6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33D0CC60950946814CE7AE231F0D8A1 /* FormCell.swift in Sources */,
+				82DAAF6C7D19DC68A45A0DB0E97A4829 /* FormManager-dummy.m in Sources */,
+				ACB87073A3610E8BB02856979BBBB37B /* FormManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D3D3F3403E9700E474C45D92C7E40FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CBB46058A63FC9AD1E00E6EC55318A9 /* Pods-FormManager_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		708457576CD5DCBEF70B0D5F4535D610 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FormManager;
+			target = F302C06715203207DF693B28B1C999D1 /* FormManager */;
+			targetProxy = C4C859EE8F45D016D34A2DB36C8D7F41 /* PBXContainerItemProxy */;
+		};
+		CE6422B733DA9E63864A58B7896A66A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FormManager;
+			target = F302C06715203207DF693B28B1C999D1 /* FormManager */;
+			targetProxy = D9B276B0972DE0124AE7E724552524D7 /* PBXContainerItemProxy */;
+		};
+		DCC9788494C9AEFD49DEF68582077C91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FormManager-FormManager";
+			target = 3D6E44BB94F47F60C4CB2F815B28C9AF /* FormManager-FormManager */;
+			targetProxy = E923D712B81224F19DA38C6498ED4AE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		425F0F29DED8EFDFBEE91B7BDB746832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 832D16FA00965417E6510C1374DE64B4 /* FormManager.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = FormManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7027B6C02E81A399CC97B259AD677446 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 832D16FA00965417E6510C1374DE64B4 /* FormManager.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FormManager/FormManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FormManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FormManager/FormManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FormManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		73DA69E0360771D7898468C299D5B108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6849134E1F8EB58F63236D5FD79656BD /* Pods-FormManager_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FormManager_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FormManager_Example/Pods-FormManager_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_FormManager_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78495F6F08F68C7C6B4981006254F30A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 832D16FA00965417E6510C1374DE64B4 /* FormManager.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FormManager/FormManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FormManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FormManager/FormManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FormManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		892B10B1EBFDCC7B8C78C8008956A230 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2631AAF6BCDF7613A68EF40E6ADC87FA /* Pods-FormManager_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FormManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FormManager_Tests/Pods-FormManager_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_FormManager_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8FBC02C4ECC11F1A5646FF7340C24576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 832D16FA00965417E6510C1374DE64B4 /* FormManager.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = FormManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C51CD8CFB3FE4354B8A85FA5B47C5756 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 704F5A65F9BB3AAA0A3748F0ED5C5F64 /* Pods-FormManager_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FormManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FormManager_Tests/Pods-FormManager_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_FormManager_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D6A4691F4F4E5285AD6FBB67E814C322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAECE251048DF3E0D2E09B732E99175C /* Pods-FormManager_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FormManager_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FormManager_Example/Pods-FormManager_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_FormManager_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29442DC5B5F5A8BF29DF0D13A75808B2 /* Build configuration list for PBXNativeTarget "Pods-FormManager_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6A4691F4F4E5285AD6FBB67E814C322 /* Debug */,
+				73DA69E0360771D7898468C299D5B108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38B16F28D2362DBD4A9DF6A73DF55B19 /* Build configuration list for PBXNativeTarget "FormManager-FormManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FBC02C4ECC11F1A5646FF7340C24576 /* Debug */,
+				425F0F29DED8EFDFBEE91B7BDB746832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D7B73B4ED51354DA6BC4969BB931C40 /* Build configuration list for PBXNativeTarget "Pods-FormManager_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				892B10B1EBFDCC7B8C78C8008956A230 /* Debug */,
+				C51CD8CFB3FE4354B8A85FA5B47C5756 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE3808BDC25AEF82DF135163956BF308 /* Build configuration list for PBXNativeTarget "FormManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7027B6C02E81A399CC97B259AD677446 /* Debug */,
+				78495F6F08F68C7C6B4981006254F30A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
