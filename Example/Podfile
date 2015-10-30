@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'FormManager_Example', :exclusive => true do
+  pod "FormManager", :path => "../"
+end
+
+target 'FormManager_Tests', :exclusive => true do
+  pod "FormManager", :path => "../"
+
+  
+end
