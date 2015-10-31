@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "FormManager"
-  s.version          = "0.0.1"
+  s.version          = "0.0.3"
   s.summary          = "A library to create UITableView forms"
   s.description      = <<-DESC
 The library helps im building UITableView forms using a MVC pattern
