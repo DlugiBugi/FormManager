@@ -8,7 +8,15 @@
 
 import UIKit
 
+public protocol BaseFormCellDelegate: class {
+    
+    func cellDidEndEdit(cell: BaseFormCell);
+    
+}
+
 public class BaseFormCell : UITableViewCell {
+    
+    public weak var delegate: BaseFormCellDelegate?
     
     public required override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -17,19 +25,30 @@ public class BaseFormCell : UITableViewCell {
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+
+    public func endEdit() {
+        
+    }
+    
+    public func startEdit() {
+        
+    }
     
     func baseFillWithData(data: AnyObject) {
-        print("BaseFormCell fillWithData")
     }
     
     class func baseHeightForData(data: AnyObject) ->CGFloat {
         return 44.0
     }
     
+
+    
 }
 
 public class FormCell<TData: AnyObject>: BaseFormCell {
 
+    public var data:TData?
+    
     public required init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
@@ -47,7 +66,8 @@ public class FormCell<TData: AnyObject>: BaseFormCell {
     
     
     override func baseFillWithData(data: AnyObject) {
-        self.fillWithData(data as! TData)
+        self.data = data as? TData
+        self.fillWithData(self.data!)
     }
     
     override class func baseHeightForData(data: AnyObject) ->CGFloat {
@@ -55,7 +75,6 @@ public class FormCell<TData: AnyObject>: BaseFormCell {
     }
     
     public func fillWithData(data: TData) {
-        print("FormCell<TData: AnyObject> fillWithData")
     }
     
     public class func heightForData(data: TData) -> CGFloat {

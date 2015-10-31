@@ -8,9 +8,9 @@
 
 import UIKit
 
-public class FormManager: NSObject, UITableViewDataSource, UITableViewDelegate {
+public class FormManager: NSObject, UITableViewDataSource, UITableViewDelegate, BaseFormCellDelegate {
     private let tableView: UITableView
-    var dataSource: [(BaseFormCell.Type,AnyObject)]? = []
+    var dataSource: [(BaseFormCell.Type,AnyObject)] = []
     
     public init(tableView: UITableView) {
         self.tableView = tableView
@@ -28,43 +28,53 @@ public class FormManager: NSObject, UITableViewDataSource, UITableViewDelegate {
     }
     
     public func addData<T: AnyObject>(data: T, cellType: FormCell<T>.Type) {
-        dataSource?.append((cellType,data))
+        dataSource.append((cellType,data))
     }
     
-    //MARK: UITableViewDataSource
+    //MARK: - Private
+    
+    
+    //MARK: - UITableViewDataSource
     
     public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let unwrappedArray = dataSource else {
-            return 0
-        }
-        
-        return unwrappedArray.count
+        return dataSource.count
     }
     
     public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        guard let (type,data) = dataSource?[indexPath.row] else {
-            return UITableViewCell()
-        }
+        let (type,data) = dataSource[indexPath.row]
         
         let typeString = String(type)
-
+        
         var cell = tableView.dequeueReusableCellWithIdentifier(typeString)
         if cell == nil {
-            tableView.registerNib(UINib(nibName: typeString, bundle: nil), forCellReuseIdentifier: typeString)
+            
+            let nib = UINib(nibName: typeString, bundle: nil)
+            tableView.registerNib(nib, forCellReuseIdentifier: typeString)
             cell = tableView.dequeueReusableCellWithIdentifier(typeString)
         }
-    
-        let baseCell = cell as! BaseFormCell
         
+        let baseCell = cell as! BaseFormCell
+        baseCell.delegate = self
         baseCell.baseFillWithData(data)
         
         return baseCell
     }
     
     public func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        guard let (type,data) = dataSource?[indexPath.row] else {
-            return 0
-        }
+        let (type,data) = dataSource[indexPath.row]
         return type.baseHeightForData(data)
+    }
+    
+    //MARK: - BaseFormCellDelegate
+    
+    public func cellDidEndEdit(cell: BaseFormCell) {
+        if let indexPath = tableView.indexPathForCell(cell) {
+            if indexPath.row < dataSource.count-1 {
+                let newCell = tableView.cellForRowAtIndexPath(NSIndexPath(forRow: indexPath.row+1, inSection: indexPath.section)) as! BaseFormCell
+                newCell.startEdit()
+            } else {
+                // just dismiss for now
+            }
+        }
     }
 }
