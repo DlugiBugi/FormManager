@@ -31,6 +31,10 @@ public class FormManager: NSObject, UITableViewDataSource, UITableViewDelegate, 
         dataSource.append((cellType,data))
     }
     
+    public func clearData(){
+        dataSource = []
+    }
+    
     //MARK: - Private
     
     
